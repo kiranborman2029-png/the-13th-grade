@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "software-engineer",
+    "title": "Software Engineer",
+    "industry": "Technology",
+    "description": "Software engineers design, build, and maintain the applications, systems, and platforms that power nearly every part of modern life — from the apps on your phone to the systems running hospitals and banks.",
+    "dayInTheLife": "A typical day involves writing and reviewing code, collaborating with designers and product managers, debugging issues, and learning new technologies. You might start with a team standup meeting, spend the morning coding a new feature, review a colleague's code after lunch, and end the day researching a better approach to a tricky problem.",
+    "typicalPath": "Most software engineers have a bachelor's degree in computer science or a related field, but many successful engineers are self-taught or came through coding bootcamps. Internships and personal projects matter as much as degrees. The field values what you can build over where you went to school.",
+    "salaryRange": "$75,000 - $200,000+",
+    "relatedEpisode": "software-engineer"
+  },
+  {
+    "slug": "registered-nurse",
+    "title": "Registered Nurse",
+    "industry": "Medicine",
+    "description": "Registered nurses are the backbone of healthcare — they assess patients, administer treatments, educate families, and advocate for the people in their care across every setting from hospitals to schools to homes.",
+    "dayInTheLife": "Your day depends on your specialty, but an ER nurse might start by reviewing patient charts, then move between triage, administering medications, assisting doctors with procedures, comforting anxious families, and documenting everything carefully. No two shifts are alike.",
+    "typicalPath": "You'll need either an Associate's Degree in Nursing (ADN) or a Bachelor of Science in Nursing (BSN), followed by passing the NCLEX-RN exam. Many nurses start with an ADN and earn their BSN while working. Specializations like ER, ICU, or pediatrics come with additional certifications.",
+    "salaryRange": "$60,000 - $120,000+",
+    "relatedEpisode": "emergency-room-nurse"
+  },
+  {
+    "slug": "electrician",
+    "title": "Electrician",
+    "industry": "Trades",
+    "description": "Electricians install, maintain, and repair electrical systems in homes, businesses, and industrial facilities. It's a hands-on career that combines problem-solving with physical work — and it's one of the most in-demand trades in the country.",
+    "dayInTheLife": "You might spend the morning running wiring through a new construction site, the afternoon troubleshooting a commercial building's electrical panel, and finish the day reviewing blueprints for tomorrow's job. Every day brings a different location and a different puzzle to solve.",
+    "typicalPath": "Most electricians complete a 4-5 year apprenticeship that combines paid on-the-job training with classroom instruction. No college degree is required. After your apprenticeship, you become a journeyman electrician, and with more experience and exams, you can become a master electrician or start your own business.",
+    "salaryRange": "$45,000 - $100,000+",
+    "relatedEpisode": "electrician"
+  },
+  {
+    "slug": "graphic-designer",
+    "title": "Graphic Designer",
+    "industry": "Arts",
+    "description": "Graphic designers use visual communication to solve problems — creating logos, websites, packaging, advertisements, and brand identities that shape how people experience companies and ideas.",
+    "dayInTheLife": "A typical day might include meeting with a client to understand their vision, sketching concepts, building designs in tools like Figma or Adobe Creative Suite, presenting options to stakeholders, and refining based on feedback. Freelancers also spend time on business development and client management.",
+    "typicalPath": "Many graphic designers have a bachelor's degree in graphic design, visual communication, or fine arts, but a strong portfolio matters more than a specific degree. Some are self-taught through online courses and practice. Building a portfolio of real projects — even volunteer or personal ones — is essential.",
+    "salaryRange": "$40,000 - $90,000+",
+    "relatedEpisode": "graphic-designer"
+  },
+  {
+    "slug": "financial-analyst",
+    "title": "Financial Analyst",
+    "industry": "Business",
+    "description": "Financial analysts help businesses and individuals make informed decisions about money — analyzing data, forecasting trends, evaluating investments, and translating complex numbers into actionable insights.",
+    "dayInTheLife": "You'll spend your day building financial models in spreadsheets, analyzing company performance data, writing reports for executives, attending meetings to present your findings, and keeping up with market news and economic trends. The work is analytical but deeply connected to real business outcomes.",
+    "typicalPath": "A bachelor's degree in finance, economics, accounting, or mathematics is standard. Many analysts pursue the CFA (Chartered Financial Analyst) designation for advancement. Internships during college are almost essential for landing your first role at a major firm.",
+    "salaryRange": "$55,000 - $150,000+",
+    "relatedEpisode": "financial-analyst"
+  },
+  {
+    "slug": "veterinarian",
+    "title": "Veterinarian",
+    "industry": "Science",
+    "description": "Veterinarians diagnose and treat diseases and injuries in animals — from household pets to farm animals to wildlife. It's a career that blends medical science with a genuine love for animals and their well-being.",
+    "dayInTheLife": "A small-animal vet might start the day with wellness checkups, perform a surgery mid-morning, diagnose a puzzling illness after lunch, and end the day counseling a family about their aging pet. Large-animal vets travel to farms and ranches. The work is physically and emotionally demanding but deeply rewarding.",
+    "typicalPath": "Becoming a vet requires a Doctor of Veterinary Medicine (DVM) degree, which is a 4-year program after completing undergraduate prerequisites (usually a bachelor's degree with heavy science coursework). Admission is extremely competitive. After graduating, you must pass licensing exams.",
+    "salaryRange": "$70,000 - $160,000+",
+    "relatedEpisode": null
+  }
+]

@@ -1,0 +1,613 @@
+{
+  "ageGroups": [
+    { "id": "kids", "label": "8-12 years old", "sublabel": "Elementary / Middle School" },
+    { "id": "teens", "label": "13-17 years old", "sublabel": "High School" },
+    { "id": "adults", "label": "18+ years old", "sublabel": "College / Adult" }
+  ],
+  "riasecTypes": {
+    "R": {
+      "name": "Realistic",
+      "nickname": "The Doer",
+      "color": "#E74C3C",
+      "description": "You like working with your hands, tools, and machines. You enjoy building, fixing, and being outdoors. You're practical, physical, and like seeing real results from your work.",
+      "kidDescription": "You love building things, working with your hands, and being outside!",
+      "careers": ["Electrician", "Mechanic", "Civil Engineer", "Architect", "Chef", "Carpenter", "Pilot", "Athletic Trainer", "Firefighter", "Marine Biologist"]
+    },
+    "I": {
+      "name": "Investigative",
+      "nickname": "The Thinker",
+      "color": "#3498DB",
+      "description": "You love analyzing, researching, and solving complex problems. You're curious about how things work and enjoy diving deep into science, data, and ideas.",
+      "kidDescription": "You love figuring out how things work and solving puzzles!",
+      "careers": ["Software Engineer", "Data Scientist", "Doctor", "Research Scientist", "Pharmacist", "Psychologist", "Forensic Analyst", "Economist", "Veterinarian", "Biotechnologist"]
+    },
+    "A": {
+      "name": "Artistic",
+      "nickname": "The Creator",
+      "color": "#9B59B6",
+      "description": "You're creative and expressive. You love design, writing, music, or visual arts. You value originality and want your work to inspire, entertain, or communicate something meaningful.",
+      "kidDescription": "You love making things, being creative, and expressing yourself!",
+      "careers": ["Graphic Designer", "Writer", "Musician", "Film Director", "Animator", "Photographer", "Interior Designer", "Game Designer", "Fashion Designer", "Art Director"]
+    },
+    "S": {
+      "name": "Social",
+      "nickname": "The Helper",
+      "color": "#2ECC71",
+      "description": "You care deeply about people and love teaching, helping, and making a difference. You're empathetic, a good communicator, and energized by teamwork and connection.",
+      "kidDescription": "You love helping people, teaching, and being part of a team!",
+      "careers": ["Teacher", "Nurse", "Counselor", "Social Worker", "Physical Therapist", "Speech Pathologist", "Nonprofit Director", "HR Manager", "Paramedic", "Coach"]
+    },
+    "E": {
+      "name": "Enterprising",
+      "nickname": "The Persuader",
+      "color": "#F39C12",
+      "description": "You're a natural leader who loves persuading, selling, and starting new things. You enjoy taking risks, making deals, and turning ideas into reality.",
+      "kidDescription": "You love leading, starting projects, and convincing people!",
+      "careers": ["Entrepreneur", "Lawyer", "Sales Director", "Marketing Manager", "Real Estate Agent", "Political Strategist", "Financial Advisor", "Event Planner", "CEO", "Recruiter"]
+    },
+    "C": {
+      "name": "Conventional",
+      "nickname": "The Organizer",
+      "color": "#1ABC9C",
+      "description": "You're detail-oriented, organized, and love working with data and systems. You thrive with structure and find satisfaction in accuracy, planning, and keeping things running smoothly.",
+      "kidDescription": "You love organizing, planning, and making sure everything is in order!",
+      "careers": ["Accountant", "Financial Analyst", "Database Administrator", "Logistics Manager", "Court Reporter", "Actuary", "Tax Advisor", "Quality Assurance Analyst", "Office Manager", "Project Manager"]
+    }
+  },
+  "riasecToIndustry": {
+    "R": ["Trades"],
+    "I": ["Technology", "Science", "Medicine"],
+    "A": ["Arts"],
+    "S": ["Medicine"],
+    "E": ["Business"],
+    "C": ["Business"]
+  },
+  "questions": {
+    "kids": [
+      {
+        "id": 1,
+        "question": "It's a free Saturday! What sounds the most fun?",
+        "options": [
+          { "text": "Building a fort or fixing my bike", "scores": { "R": 3 } },
+          { "text": "Doing a science experiment", "scores": { "I": 3 } },
+          { "text": "Drawing, painting, or making music", "scores": { "A": 3 } },
+          { "text": "Playing a game with my friends", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "If you could have any superpower, which would you choose?",
+        "options": [
+          { "text": "Super strength to build anything", "scores": { "R": 3 } },
+          { "text": "Super brain to solve any mystery", "scores": { "I": 3 } },
+          { "text": "The power to create anything from thin air", "scores": { "A": 3 } },
+          { "text": "The power to heal anyone who's hurt", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Which school activity do you like best?",
+        "options": [
+          { "text": "Science class or lab experiments", "scores": { "I": 3, "R": 1 } },
+          { "text": "Art class or music", "scores": { "A": 3 } },
+          { "text": "PE or recess", "scores": { "R": 2, "S": 1 } },
+          { "text": "Group projects or helping classmates", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Your class is doing a project. What's your job?",
+        "options": [
+          { "text": "Building the model or display", "scores": { "R": 3 } },
+          { "text": "Doing the research and finding facts", "scores": { "I": 3 } },
+          { "text": "Making it look awesome with decorations and design", "scores": { "A": 3 } },
+          { "text": "Being the team leader and presenting", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Which of these would you watch on YouTube?",
+        "options": [
+          { "text": "How things are made in a factory", "scores": { "R": 3 } },
+          { "text": "A cool science or space video", "scores": { "I": 3 } },
+          { "text": "An art tutorial or animation channel", "scores": { "A": 3 } },
+          { "text": "A vlog about someone's daily life", "scores": { "S": 2, "E": 1 } }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "A friend is having a bad day. What do you do?",
+        "options": [
+          { "text": "Help them fix whatever went wrong", "scores": { "R": 2, "S": 1 } },
+          { "text": "Try to figure out why they're upset", "scores": { "I": 2, "S": 1 } },
+          { "text": "Make them a card or draw them something", "scores": { "A": 3 } },
+          { "text": "Sit with them and listen", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Which of these sounds like the coolest job?",
+        "options": [
+          { "text": "Building houses or driving big machines", "scores": { "R": 3 } },
+          { "text": "Working in a lab discovering new things", "scores": { "I": 3 } },
+          { "text": "Being a movie director or game designer", "scores": { "A": 3 } },
+          { "text": "Being a doctor or teacher", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "What would you bring to show and tell?",
+        "options": [
+          { "text": "Something I built or took apart", "scores": { "R": 3 } },
+          { "text": "A bug, rock, or something cool from nature", "scores": { "I": 3 } },
+          { "text": "Something I drew or made", "scores": { "A": 3 } },
+          { "text": "A trophy or award I'm proud of", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "How do you like to learn new things?",
+        "options": [
+          { "text": "By doing it myself and trying it out", "scores": { "R": 3 } },
+          { "text": "By reading about it or watching videos", "scores": { "I": 3 } },
+          { "text": "By being creative and experimenting", "scores": { "A": 3 } },
+          { "text": "By working with a group", "scores": { "S": 2, "E": 1 } }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "If you had a lemonade stand, what would you enjoy most?",
+        "options": [
+          { "text": "Building the stand", "scores": { "R": 3 } },
+          { "text": "Coming up with the perfect recipe", "scores": { "I": 3 } },
+          { "text": "Designing the sign and cups", "scores": { "A": 3 } },
+          { "text": "Talking to customers and making them smile", "scores": { "S": 2, "E": 1 } }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "What do you like doing on a computer or tablet?",
+        "options": [
+          { "text": "Playing building or sandbox games", "scores": { "R": 2, "I": 1 } },
+          { "text": "Looking up facts and asking questions", "scores": { "I": 3 } },
+          { "text": "Drawing, making videos, or editing photos", "scores": { "A": 3 } },
+          { "text": "Making lists, organizing files, or planning things", "scores": { "C": 3 } }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "Pick the animal you're most like!",
+        "options": [
+          { "text": "A beaver - always building something", "scores": { "R": 3 } },
+          { "text": "An owl - wise and curious", "scores": { "I": 3 } },
+          { "text": "A peacock - unique and colorful", "scores": { "A": 3 } },
+          { "text": "A dolphin - friendly and social", "scores": { "S": 3 } }
+        ]
+      }
+    ],
+    "teens": [
+      {
+        "id": 1,
+        "question": "You have a weekend with zero plans. What do you gravitate toward?",
+        "options": [
+          { "text": "A hands-on project - building, fixing, or working on something physical", "scores": { "R": 3 } },
+          { "text": "Going down a research rabbit hole on something fascinating", "scores": { "I": 3 } },
+          { "text": "Working on a creative project - music, art, writing, design", "scores": { "A": 3 } },
+          { "text": "Hanging out with friends, volunteering, or helping someone out", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "In a group project, which role do you naturally fall into?",
+        "options": [
+          { "text": "The one who actually builds or makes the thing", "scores": { "R": 3 } },
+          { "text": "The researcher who finds all the information", "scores": { "I": 3 } },
+          { "text": "The designer who makes the presentation look amazing", "scores": { "A": 3 } },
+          { "text": "The leader who keeps everyone on track", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Which subject do you look forward to most?",
+        "options": [
+          { "text": "Shop, engineering, or anything hands-on", "scores": { "R": 3 } },
+          { "text": "Biology, chemistry, or physics", "scores": { "I": 3 } },
+          { "text": "Art, music, creative writing, or drama", "scores": { "A": 3 } },
+          { "text": "History, psychology, or social studies", "scores": { "S": 2, "I": 1 } }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Which of these after-school activities appeals to you most?",
+        "options": [
+          { "text": "Robotics club or auto shop", "scores": { "R": 2, "I": 1 } },
+          { "text": "Science olympiad or debate team", "scores": { "I": 3 } },
+          { "text": "Art club, band, or drama", "scores": { "A": 3 } },
+          { "text": "Student government or community service", "scores": { "S": 2, "E": 1 } }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "You're scrolling your phone. What content stops you?",
+        "options": [
+          { "text": "Satisfying build videos or workshop tours", "scores": { "R": 3 } },
+          { "text": "Explainer videos about science, tech, or how things work", "scores": { "I": 3 } },
+          { "text": "Creative content - art, photography, design, or music", "scores": { "A": 3 } },
+          { "text": "Motivational content, business tips, or success stories", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "What kind of problem would you find most satisfying to solve?",
+        "options": [
+          { "text": "A machine that's broken and needs to be fixed", "scores": { "R": 3 } },
+          { "text": "A medical mystery or scientific puzzle", "scores": { "I": 3 } },
+          { "text": "A brand that needs a fresh new look", "scores": { "A": 2, "E": 1 } },
+          { "text": "A person going through a tough time who needs guidance", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "How do you feel about working with numbers and data?",
+        "options": [
+          { "text": "I prefer working with my hands over spreadsheets", "scores": { "R": 2, "A": 1 } },
+          { "text": "I love data - it helps me understand patterns", "scores": { "I": 2, "C": 1 } },
+          { "text": "I'd rather let the numbers support my ideas", "scores": { "E": 2, "A": 1 } },
+          { "text": "I'm good with numbers when they help me organize things", "scores": { "C": 3 } }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "You just made $500 unexpectedly. What do you do?",
+        "options": [
+          { "text": "Buy tools or supplies for a project", "scores": { "R": 3 } },
+          { "text": "Invest it or save it strategically", "scores": { "C": 2, "E": 1 } },
+          { "text": "Spend it on art supplies, music gear, or creative tools", "scores": { "A": 3 } },
+          { "text": "Donate some and spend the rest on experiences with friends", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Where would your ideal workspace be?",
+        "options": [
+          { "text": "A workshop, garage, or outdoor job site", "scores": { "R": 3 } },
+          { "text": "A lab, library, or quiet office with dual monitors", "scores": { "I": 3 } },
+          { "text": "A design studio, creative agency, or home studio", "scores": { "A": 3 } },
+          { "text": "A school, hospital, or community center", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Which of these would stress you out the LEAST?",
+        "options": [
+          { "text": "Physical labor and long days on your feet", "scores": { "R": 3 } },
+          { "text": "Spending hours analyzing complex information", "scores": { "I": 3 } },
+          { "text": "Tight creative deadlines with client feedback", "scores": { "A": 2, "E": 1 } },
+          { "text": "Dealing with emotional or difficult conversations", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "How do you feel about public speaking?",
+        "options": [
+          { "text": "I'd rather show my work than talk about it", "scores": { "R": 2, "I": 1 } },
+          { "text": "I'm fine with it if I know the topic inside out", "scores": { "I": 2, "C": 1 } },
+          { "text": "I actually enjoy performing and being in front of people", "scores": { "A": 2, "E": 1 } },
+          { "text": "I'm great at it - I love persuading and inspiring people", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "What's your approach to rules and structure?",
+        "options": [
+          { "text": "Safety rules matter, but I like hands-on freedom", "scores": { "R": 2, "A": 1 } },
+          { "text": "I follow a method but stay open to new evidence", "scores": { "I": 3 } },
+          { "text": "I bend or break rules to do things my own way", "scores": { "A": 2, "E": 1 } },
+          { "text": "I like clear systems - they help everything run smoothly", "scores": { "C": 3 } }
+        ]
+      },
+      {
+        "id": 13,
+        "question": "How would your friends describe you?",
+        "options": [
+          { "text": "Handy, reliable, and practical", "scores": { "R": 3 } },
+          { "text": "Smart, curious, and analytical", "scores": { "I": 3 } },
+          { "text": "Creative, unique, and expressive", "scores": { "A": 3 } },
+          { "text": "Kind, supportive, and a great listener", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 14,
+        "question": "What matters most to you in a future career?",
+        "options": [
+          { "text": "Working with my hands and seeing tangible results", "scores": { "R": 3 } },
+          { "text": "Solving hard problems and discovering new things", "scores": { "I": 3 } },
+          { "text": "Creative freedom and self-expression", "scores": { "A": 3 } },
+          { "text": "Helping people and making a real difference", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 15,
+        "question": "How do you feel about college?",
+        "options": [
+          { "text": "I'd rather go straight into a trade or apprenticeship", "scores": { "R": 3 } },
+          { "text": "I want to study a specific subject in depth", "scores": { "I": 3 } },
+          { "text": "Art school or a creative program sounds great", "scores": { "A": 3 } },
+          { "text": "I'll go if it leads to a career where I can help people", "scores": { "S": 2, "E": 1 } }
+        ]
+      },
+      {
+        "id": 16,
+        "question": "Which of these work styles sounds like you?",
+        "options": [
+          { "text": "Independent - give me a task and I'll get it done", "scores": { "R": 2, "C": 1 } },
+          { "text": "Focused - I need quiet time to think deeply", "scores": { "I": 3 } },
+          { "text": "Flexible - I do my best work when I can set my own schedule", "scores": { "A": 2, "E": 1 } },
+          { "text": "Collaborative - I thrive when I'm working with a team", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 17,
+        "question": "Pick the activity that sounds the most rewarding:",
+        "options": [
+          { "text": "Restoring something old and making it work again", "scores": { "R": 3 } },
+          { "text": "Conducting an experiment and discovering something new", "scores": { "I": 3 } },
+          { "text": "Creating something that didn't exist before", "scores": { "A": 3 } },
+          { "text": "Leading a team to accomplish a big goal", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 18,
+        "question": "If you could shadow any professional for a day, who would it be?",
+        "options": [
+          { "text": "An architect, electrician, or engineer", "scores": { "R": 3 } },
+          { "text": "A scientist, doctor, or researcher", "scores": { "I": 3 } },
+          { "text": "A filmmaker, designer, or musician", "scores": { "A": 3 } },
+          { "text": "A CEO, lawyer, or startup founder", "scores": { "E": 3 } }
+        ]
+      }
+    ],
+    "adults": [
+      {
+        "id": 1,
+        "question": "When you lose track of time, what are you usually doing?",
+        "options": [
+          { "text": "Working on something physical - building, repairing, or gardening", "scores": { "R": 3 } },
+          { "text": "Researching something fascinating or solving a complex problem", "scores": { "I": 3 } },
+          { "text": "Creating something - writing, designing, making music", "scores": { "A": 3 } },
+          { "text": "Having a deep conversation or helping someone work through something", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "In a team setting, you naturally tend to:",
+        "options": [
+          { "text": "Do the actual work - execute and deliver", "scores": { "R": 3 } },
+          { "text": "Analyze the problem and propose evidence-based solutions", "scores": { "I": 3 } },
+          { "text": "Come up with creative ideas and new approaches", "scores": { "A": 3 } },
+          { "text": "Take charge, delegate, and keep everyone moving", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Which environment would you feel most energized in?",
+        "options": [
+          { "text": "A workshop, construction site, or outdoor setting", "scores": { "R": 3 } },
+          { "text": "A research lab, tech office, or data-driven workspace", "scores": { "I": 3 } },
+          { "text": "A creative studio, gallery, or design firm", "scores": { "A": 3 } },
+          { "text": "A hospital, school, or community organization", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "When making a big decision, you primarily rely on:",
+        "options": [
+          { "text": "Practical experience and common sense", "scores": { "R": 2, "C": 1 } },
+          { "text": "Data, evidence, and careful analysis", "scores": { "I": 3 } },
+          { "text": "Intuition and how it feels creatively", "scores": { "A": 3 } },
+          { "text": "How it will affect the people involved", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What frustrates you most at work or school?",
+        "options": [
+          { "text": "Too much talking, not enough doing", "scores": { "R": 3 } },
+          { "text": "Decisions made without sufficient evidence or logic", "scores": { "I": 3 } },
+          { "text": "Rigid rules that stifle creativity", "scores": { "A": 3 } },
+          { "text": "People being treated unfairly or ignored", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Which of these values resonates most deeply with you?",
+        "options": [
+          { "text": "Independence and self-reliance", "scores": { "R": 2, "E": 1 } },
+          { "text": "Knowledge and understanding", "scores": { "I": 3 } },
+          { "text": "Beauty, originality, and authenticity", "scores": { "A": 3 } },
+          { "text": "Compassion and service to others", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "If money were no object, you'd spend your time:",
+        "options": [
+          { "text": "Building things, working outdoors, or mastering a craft", "scores": { "R": 3 } },
+          { "text": "Exploring ideas, learning new fields, or doing research", "scores": { "I": 3 } },
+          { "text": "Making art, writing, or pursuing creative projects", "scores": { "A": 3 } },
+          { "text": "Starting a business or leading a meaningful project", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "How do you recharge after a long day?",
+        "options": [
+          { "text": "Doing something physical - working out, hiking, tinkering", "scores": { "R": 3 } },
+          { "text": "Reading, watching documentaries, or learning something new", "scores": { "I": 3 } },
+          { "text": "Listening to music, creating, or consuming art", "scores": { "A": 3 } },
+          { "text": "Spending quality time with people I care about", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Which skill comes most naturally to you?",
+        "options": [
+          { "text": "Using tools, fixing things, or physical coordination", "scores": { "R": 3 } },
+          { "text": "Critical thinking, analysis, or troubleshooting", "scores": { "I": 3 } },
+          { "text": "Creative expression, visual thinking, or writing", "scores": { "A": 3 } },
+          { "text": "Persuading, negotiating, or motivating others", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "How do you prefer to communicate?",
+        "options": [
+          { "text": "Through action - I show rather than tell", "scores": { "R": 3 } },
+          { "text": "With precision - clear, logical, evidence-backed", "scores": { "I": 2, "C": 1 } },
+          { "text": "Expressively - through stories, visuals, or metaphors", "scores": { "A": 3 } },
+          { "text": "Empathetically - I focus on how my words land with others", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "What kind of recognition means the most to you?",
+        "options": [
+          { "text": "Seeing something I built or fixed working perfectly", "scores": { "R": 3 } },
+          { "text": "Having my expertise or insights valued", "scores": { "I": 3 } },
+          { "text": "Knowing my creative work moved or inspired someone", "scores": { "A": 3 } },
+          { "text": "Hearing that I made a difference in someone's life", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "When you read the news, which stories grab your attention?",
+        "options": [
+          { "text": "Infrastructure, engineering breakthroughs, or construction", "scores": { "R": 3 } },
+          { "text": "Scientific discoveries, tech innovations, or medical advances", "scores": { "I": 3 } },
+          { "text": "Culture, art, design trends, or entertainment", "scores": { "A": 3 } },
+          { "text": "Business deals, startups, or economic developments", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 13,
+        "question": "How do you handle uncertainty?",
+        "options": [
+          { "text": "I take practical steps to reduce risk", "scores": { "R": 2, "C": 1 } },
+          { "text": "I gather more information before deciding", "scores": { "I": 3 } },
+          { "text": "I embrace it - uncertainty is where creativity lives", "scores": { "A": 3 } },
+          { "text": "I lean on my network and collaborate through it", "scores": { "S": 2, "E": 1 } }
+        ]
+      },
+      {
+        "id": 14,
+        "question": "What does success look like to you?",
+        "options": [
+          { "text": "Mastering a craft and producing quality work", "scores": { "R": 3 } },
+          { "text": "Making groundbreaking discoveries or solving hard problems", "scores": { "I": 3 } },
+          { "text": "Creating something original that stands the test of time", "scores": { "A": 3 } },
+          { "text": "Building something bigger than yourself - an organization, a legacy", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 15,
+        "question": "How structured do you like your day?",
+        "options": [
+          { "text": "Routine with variety - same general structure, different tasks", "scores": { "R": 2, "C": 1 } },
+          { "text": "Flexible but focused - I set my own priorities", "scores": { "I": 2, "A": 1 } },
+          { "text": "Very unstructured - I need creative freedom", "scores": { "A": 3 } },
+          { "text": "Highly organized - I like detailed schedules and plans", "scores": { "C": 3 } }
+        ]
+      },
+      {
+        "id": 16,
+        "question": "Which of these sounds like the most interesting challenge?",
+        "options": [
+          { "text": "Designing and building a sustainable tiny house", "scores": { "R": 3 } },
+          { "text": "Developing an AI system that detects diseases early", "scores": { "I": 3 } },
+          { "text": "Directing a documentary film about an untold story", "scores": { "A": 3 } },
+          { "text": "Counseling at-risk youth and helping them find direction", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 17,
+        "question": "When it comes to your career, risk means:",
+        "options": [
+          { "text": "Physical risk - I'm comfortable with that", "scores": { "R": 3 } },
+          { "text": "Intellectual risk - I like testing bold hypotheses", "scores": { "I": 3 } },
+          { "text": "Creative risk - putting my work out there to be judged", "scores": { "A": 3 } },
+          { "text": "Financial risk - I'd start a business or bet on myself", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 18,
+        "question": "What kind of impact do you want your work to have?",
+        "options": [
+          { "text": "Build and maintain the things society depends on", "scores": { "R": 3 } },
+          { "text": "Advance human knowledge and understanding", "scores": { "I": 3 } },
+          { "text": "Inspire and move people through creativity", "scores": { "A": 3 } },
+          { "text": "Directly improve people's lives and well-being", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 19,
+        "question": "Which workplace perk matters most?",
+        "options": [
+          { "text": "Being outdoors or working with my hands every day", "scores": { "R": 3 } },
+          { "text": "Access to cutting-edge tools and resources", "scores": { "I": 3 } },
+          { "text": "Creative freedom and a beautiful workspace", "scores": { "A": 3 } },
+          { "text": "A mission-driven organization that does meaningful work", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 20,
+        "question": "How important is financial earning potential in your career choice?",
+        "options": [
+          { "text": "I want fair pay for skilled work, but it's not my main driver", "scores": { "R": 2, "S": 1 } },
+          { "text": "Important - I want a career with strong earning potential", "scores": { "E": 2, "C": 1 } },
+          { "text": "I'd sacrifice pay for creative fulfillment", "scores": { "A": 3 } },
+          { "text": "I'd sacrifice pay to help people and feel purposeful", "scores": { "S": 3 } }
+        ]
+      },
+      {
+        "id": 21,
+        "question": "If you could go back to school for anything, it would be:",
+        "options": [
+          { "text": "A skilled trade or technical certification", "scores": { "R": 3 } },
+          { "text": "A science, math, or engineering degree", "scores": { "I": 3 } },
+          { "text": "Fine arts, film, writing, or design", "scores": { "A": 3 } },
+          { "text": "Business, law, or an MBA", "scores": { "E": 3 } }
+        ]
+      },
+      {
+        "id": 22,
+        "question": "What's your relationship with technology?",
+        "options": [
+          { "text": "I use it as a tool, but prefer working with real materials", "scores": { "R": 3 } },
+          { "text": "I love it - I'm always exploring new tools and systems", "scores": { "I": 3 } },
+          { "text": "I use it creatively - design software, music production, etc.", "scores": { "A": 3 } },
+          { "text": "I use it to connect with people and stay organized", "scores": { "S": 2, "C": 1 } }
+        ]
+      },
+      {
+        "id": 23,
+        "question": "When you look at a building, you notice:",
+        "options": [
+          { "text": "The construction quality and engineering", "scores": { "R": 3 } },
+          { "text": "The systems - HVAC, electrical, energy efficiency", "scores": { "I": 2, "C": 1 } },
+          { "text": "The design, aesthetics, and architectural style", "scores": { "A": 3 } },
+          { "text": "How the space makes people feel and function together", "scores": { "S": 2, "E": 1 } }
+        ]
+      },
+      {
+        "id": 24,
+        "question": "Imagine your ideal legacy. People would remember you for:",
+        "options": [
+          { "text": "Building something lasting with your own two hands", "scores": { "R": 3 } },
+          { "text": "A breakthrough discovery or innovation", "scores": { "I": 3 } },
+          { "text": "A body of creative work that inspired others", "scores": { "A": 3 } },
+          { "text": "The lives you changed and the communities you strengthened", "scores": { "S": 3 } }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "When you have free time, what do you enjoy most?",
+      "options": [
+        { "text": "Building or fixing things with my hands", "scores": { "Trades": 3, "Science": 1 } },
+        { "text": "Drawing, designing, or creating something visual", "scores": { "Arts": 3, "Technology": 1 } },
+        { "text": "Reading, researching, or learning about how things work", "scores": { "Science": 2, "Technology": 2 } },
+        { "text": "Organizing events or helping friends solve problems", "scores": { "Business": 2, "Medicine": 2 } }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which school subject do you find most interesting?",
+      "options": [
+        { "text": "Math or computer science", "scores": { "Technology": 3, "Business": 1 } },
+        { "text": "Biology or chemistry", "scores": { "Medicine": 3, "Science": 2 } },
+        { "text": "Art, music, or creative writing", "scores": { "Arts": 3 } },
+        { "text": "Shop class, engineering, or anything hands-on", "scores": { "Trades": 3, "Technology": 1 } }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "How do you feel about working with people every day?",
+      "options": [
+        { "text": "I love it — I'm at my best around people", "scores": { "Medicine": 2, "Business": 2 } },
+        { "text": "I like teamwork but also need solo time to focus", "scores": { "Technology": 2, "Arts": 1, "Science": 1 } },
+        { "text": "I prefer working independently or in small groups", "scores": { "Trades": 2, "Arts": 2 } },
+        { "text": "It depends on the project — I'm flexible", "scores": { "Business": 1, "Technology": 1, "Science": 1, "Trades": 1 } }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What kind of problem would you most enjoy solving?",
+      "options": [
+        { "text": "A patient isn't feeling well and nobody knows why", "scores": { "Medicine": 3, "Science": 1 } },
+        { "text": "A website keeps crashing and needs to be fixed", "scores": { "Technology": 3 } },
+        { "text": "A building's electrical system needs to be redesigned", "scores": { "Trades": 3, "Technology": 1 } },
+        { "text": "A company needs a new brand identity to attract customers", "scores": { "Arts": 2, "Business": 2 } }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What matters most to you in a future career?",
+      "options": [
+        { "text": "Making a direct impact on people's lives", "scores": { "Medicine": 3, "Science": 1 } },
+        { "text": "Creative freedom and self-expression", "scores": { "Arts": 3, "Trades": 1 } },
+        { "text": "Financial stability and growth potential", "scores": { "Business": 3, "Technology": 1 } },
+        { "text": "Job security and being able to work anywhere", "scores": { "Trades": 2, "Technology": 2 } }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Imagine your ideal workday. Where are you?",
+      "options": [
+        { "text": "In a hospital, clinic, or lab helping people", "scores": { "Medicine": 3 } },
+        { "text": "At a desk with a computer, building something digital", "scores": { "Technology": 3, "Business": 1 } },
+        { "text": "On a job site, outdoors, or in a workshop", "scores": { "Trades": 3 } },
+        { "text": "In a studio, agency, or creative workspace", "scores": { "Arts": 3 } }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "How do you feel about going to college?",
+      "options": [
+        { "text": "I'm excited — I want to dive deep into a subject", "scores": { "Science": 2, "Medicine": 2 } },
+        { "text": "I'd rather learn by doing — apprenticeships or on-the-job training", "scores": { "Trades": 3, "Arts": 1 } },
+        { "text": "I'll go if it helps my career, but I want practical skills", "scores": { "Business": 2, "Technology": 2 } },
+        { "text": "I want a mix — some school, some real-world experience", "scores": { "Technology": 1, "Arts": 1, "Business": 1, "Medicine": 1 } }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which of these would you binge-watch?",
+      "options": [
+        { "text": "A medical drama like Grey's Anatomy", "scores": { "Medicine": 3 } },
+        { "text": "A tech documentary like The Social Dilemma", "scores": { "Technology": 3 } },
+        { "text": "A competition show like Shark Tank", "scores": { "Business": 3 } },
+        { "text": "A home renovation show like Fixer Upper", "scores": { "Trades": 2, "Arts": 2 } }
+      ]
+    }
+  ],
+  "industries": {
+    "Technology": {
+      "label": "Technology",
+      "description": "You think in systems and love building things that work. Careers in tech let you create, innovate, and solve problems at scale.",
+      "icon": "Monitor"
+    },
+    "Medicine": {
+      "label": "Medicine & Healthcare",
+      "description": "You care deeply about people and want to make a tangible difference in their lives. Healthcare careers put you on the front lines of human well-being.",
+      "icon": "Heart"
+    },
+    "Trades": {
+      "label": "Skilled Trades",
+      "description": "You're hands-on, practical, and love seeing the direct results of your work. The trades offer strong pay, independence, and careers that can't be outsourced.",
+      "icon": "Wrench"
+    },
+    "Arts": {
+      "label": "Arts & Design",
+      "description": "You see the world through a creative lens and want your work to inspire, communicate, or delight. Creative careers turn your vision into impact.",
+      "icon": "Palette"
+    },
+    "Business": {
+      "label": "Business & Finance",
+      "description": "You're strategic, organized, and energized by growth. Business careers let you drive decisions, manage resources, and shape how organizations succeed.",
+      "icon": "TrendingUp"
+    },
+    "Science": {
+      "label": "Science & Research",
+      "description": "You're curious, methodical, and driven to understand how things work. Science careers let you explore, discover, and push the boundaries of knowledge.",
+      "icon": "Microscope"
+    }
+  }
+}

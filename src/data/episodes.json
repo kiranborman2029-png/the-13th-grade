@@ -1,0 +1,97 @@
+[
+  {
+    "slug": "software-engineer",
+    "title": "Software Engineer",
+    "job": "Software Engineer",
+    "industry": "Technology",
+    "runtime": "24 min",
+    "description": "From debugging code at 2 AM to building products used by millions — two software engineers share what it really takes to break into tech, stay current, and find meaning in the work beyond the screen.",
+    "youngGuest": {
+      "name": "Priya Sharma",
+      "role": "Junior Software Engineer at Stripe (2 years experience)"
+    },
+    "veteranGuest": {
+      "name": "Marcus Chen",
+      "role": "Principal Engineer at Google (18 years experience)"
+    },
+    "youtubeId": "dQw4w9WgXcQ",
+    "thumbnail": "/images/ep-software.jpg",
+    "date": "2026-06-15"
+  },
+  {
+    "slug": "emergency-room-nurse",
+    "title": "Emergency Room Nurse",
+    "job": "ER Nurse",
+    "industry": "Medicine",
+    "runtime": "28 min",
+    "description": "The beeping monitors, the split-second decisions, and the moments that make it all worth it. Two ER nurses — one fresh out of nursing school and one with decades on the floor — reveal the truth about healthcare's front line.",
+    "youngGuest": {
+      "name": "Jordan Williams",
+      "role": "ER Nurse at UCSF Medical Center (1 year experience)"
+    },
+    "veteranGuest": {
+      "name": "Diana Reyes",
+      "role": "Charge Nurse, Trauma Unit at Johns Hopkins (22 years experience)"
+    },
+    "youtubeId": "dQw4w9WgXcQ",
+    "thumbnail": "/images/ep-nurse.jpg",
+    "date": "2026-06-01"
+  },
+  {
+    "slug": "electrician",
+    "title": "Electrician",
+    "job": "Electrician",
+    "industry": "Trades",
+    "runtime": "22 min",
+    "description": "No student debt, hands-on problem solving every day, and a career that's impossible to outsource. Two electricians explain how the trades can offer financial freedom, job security, and genuine pride in your work.",
+    "youngGuest": {
+      "name": "Tyler Brooks",
+      "role": "Apprentice Electrician, IBEW Local 302 (6 months in)"
+    },
+    "veteranGuest": {
+      "name": "Sandra Okafor",
+      "role": "Master Electrician & Business Owner (25 years experience)"
+    },
+    "youtubeId": "dQw4w9WgXcQ",
+    "thumbnail": "/images/ep-electrician.jpg",
+    "date": "2026-05-15"
+  },
+  {
+    "slug": "graphic-designer",
+    "title": "Graphic Designer",
+    "job": "Graphic Designer",
+    "industry": "Arts",
+    "runtime": "26 min",
+    "description": "Can you really make a living being creative? Two graphic designers — one freelancing from her apartment, one leading design at a Fortune 500 — talk clients, creativity, and what art school doesn't teach you.",
+    "youngGuest": {
+      "name": "Ava Mitchell",
+      "role": "Freelance Graphic Designer (3 years experience)"
+    },
+    "veteranGuest": {
+      "name": "Robert Kim",
+      "role": "VP of Design at Nike (20 years experience)"
+    },
+    "youtubeId": "dQw4w9WgXcQ",
+    "thumbnail": "/images/ep-designer.jpg",
+    "date": "2026-05-01"
+  },
+  {
+    "slug": "financial-analyst",
+    "title": "Financial Analyst",
+    "job": "Financial Analyst",
+    "industry": "Business",
+    "runtime": "25 min",
+    "description": "Numbers tell stories if you know how to read them. Two financial analysts break down what it's really like to work in finance — the spreadsheets, the strategy, and whether Wall Street lives up to the movies.",
+    "youngGuest": {
+      "name": "David Park",
+      "role": "Financial Analyst at JPMorgan Chase (1 year experience)"
+    },
+    "veteranGuest": {
+      "name": "Catherine Moore",
+      "role": "CFO at a Series C Startup (16 years in finance)"
+    },
+    "youtubeId": "dQw4w9WgXcQ",
+    "thumbnail": "/images/ep-finance.jpg",
+    "date": "2026-04-15"
+  }
+]
