@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Heart, Mic, Users, Building2, ArrowRight } from 'lucide-react'
 import SuggestCareer from '@/components/SuggestCareer'
+import PlaceholderImage from '@/components/PlaceholderImage'
 
 export const metadata: Metadata = {
   title: 'Get Involved',
@@ -21,6 +22,15 @@ export default function GetInvolvedPage() {
             The 13th Grade is a community project. Here&apos;s how you can help us help more
             students explore their futures.
           </p>
+          {/* PLACEHOLDER: Replace public/images/community.jpg with a photo of people volunteering, collaborating, or community involvement */}
+          <div className="mt-10 max-w-3xl mx-auto">
+            <PlaceholderImage
+              src="/images/community.jpg"
+              alt="Community members collaborating"
+              label="Community Image Placeholder"
+              aspectClass="aspect-[21/9]"
+            />
+          </div>
         </div>
 
         {/* Ways to help */}

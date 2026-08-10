@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, Heart, Target, Users, Linkedin } from 'lucide-react'
+import PlaceholderImage from '@/components/PlaceholderImage'
 
 export const metadata: Metadata = {
   title: 'Our Mission',
@@ -28,6 +29,15 @@ export default function MissionPage() {
             The 13th Grade is a nonprofit dedicated to helping young people explore careers and discover what comes after school. We believe every student deserves an honest, inside look at the paths available to them — not just the well-known jobs, but the ones they&apos;ve never heard of. School ends at 12th grade, but the most important lessons about work and life come next. That&apos;s the 13th grade. Through real conversations with real professionals at every stage of their careers, we bring students the stories, insight, and inspiration they need to imagine their own future — one career at a time.
           </p>
         </div>
+
+        {/* PLACEHOLDER: Replace public/images/mission-hero.jpg with a photo representing career discovery, mentorship, or young people looking forward */}
+        <PlaceholderImage
+          src="/images/mission-hero.jpg"
+          alt="Students discovering their futures"
+          label="Mission Image Placeholder"
+          aspectClass="aspect-[21/9]"
+          className="mt-12"
+        />
 
         {/* Values cards */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -85,20 +95,22 @@ export default function MissionPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Kiran */}
             <div className="rounded-2xl border border-border bg-white p-8 text-center">
-              <div className="mx-auto w-28 h-28 rounded-full overflow-hidden bg-navy/10 mb-4">
+              <div className="mx-auto w-32 h-32 rounded-full overflow-hidden bg-navy/10 mb-4 ring-4 ring-gold/20">
                 <img
-                  src="/images/kiran.jpg"
+                  src="/images/kiran.png"
                   alt="Kiran Borman"
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="font-serif text-xl font-bold text-navy">Kiran Borman</h3>
-              <p className="text-sm font-semibold text-gold mt-1">Founder</p>
+              <p className="text-sm font-semibold text-gold mt-1">Co-Founder</p>
               <p className="mt-3 text-sm text-slate leading-relaxed">
-                Kiran Borman is a co-founder of The 13th Grade and a student at Campolindo High School. Driven by a belief that career education should start early and reflect the real world, he helped launch The 13th Grade to give students an honest window into the paths available to them.
+                Kiran Borman is a co-founder of The 13th Grade and a student at Campolindo High School. With a passion for building things that matter and a strong interest in fields like technology and economics, he launched The 13th Grade to close the gap between what school teaches and what the real world looks like. Through the stories of people actually living out their careers, he hopes to help students explore the paths available to them.
               </p>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/kiran-borman-779385403/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Kiran Borman on LinkedIn"
                 className="inline-flex items-center justify-center w-10 h-10 mt-4 rounded-full bg-navy/5 hover:bg-gold/10 hover:text-gold text-navy/60 transition-colors"
               >
@@ -108,20 +120,22 @@ export default function MissionPage() {
 
             {/* Nathan */}
             <div className="rounded-2xl border border-border bg-white p-8 text-center">
-              <div className="mx-auto w-28 h-28 rounded-full overflow-hidden bg-navy/10 mb-4">
+              <div className="mx-auto w-32 h-32 rounded-full overflow-hidden bg-navy/10 mb-4 ring-4 ring-gold/20">
                 <img
-                  src="/images/nathan.jpg"
+                  src="/images/nathan.png"
                   alt="Nathan Pang"
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="font-serif text-xl font-bold text-navy">Nathan Pang</h3>
-              <p className="text-sm font-semibold text-gold mt-1">Founder</p>
+              <p className="text-sm font-semibold text-gold mt-1">Co-Founder</p>
               <p className="mt-3 text-sm text-slate leading-relaxed">
                 Nathan Pang is a co-founder of The 13th Grade and a student at Campolindo High School. Passionate about connecting young people with real-world opportunity, he helped build The 13th Grade to make career exploration accessible, engaging, and honest for students of every age.
               </p>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/nathan-pang-22b419403/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Nathan Pang on LinkedIn"
                 className="inline-flex items-center justify-center w-10 h-10 mt-4 rounded-full bg-navy/5 hover:bg-gold/10 hover:text-gold text-navy/60 transition-colors"
               >

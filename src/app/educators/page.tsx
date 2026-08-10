@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, BookOpen, Play, Brain, CheckCircle } from 'lucide-react'
+import PlaceholderImage from '@/components/PlaceholderImage'
 
 export const metadata: Metadata = {
   title: 'For Parents & Educators',
@@ -19,6 +20,15 @@ export default function EducatorsPage() {
           <p className="mt-4 text-lg text-slate max-w-2xl mx-auto">
             Free, trustworthy career exploration content you can confidently recommend to your students or children.
           </p>
+          {/* PLACEHOLDER: Replace public/images/classroom.jpg with a warm photo of a classroom or mentor-student interaction */}
+          <div className="mt-10 max-w-3xl mx-auto">
+            <PlaceholderImage
+              src="/images/classroom.jpg"
+              alt="Students learning in a classroom"
+              label="Classroom Image Placeholder"
+              aspectClass="aspect-[21/9]"
+            />
+          </div>
         </div>
 
         {/* Why it matters */}

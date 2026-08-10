@@ -3,6 +3,7 @@ import { ArrowRight, Lightbulb, BookOpen, Users } from 'lucide-react'
 import EpisodeCard from '@/components/EpisodeCard'
 import ValuesRow from '@/components/ValuesRow'
 import NewsletterForm from '@/components/NewsletterForm'
+import PlaceholderImage from '@/components/PlaceholderImage'
 import { getFeaturedEpisodes } from '@/lib/data'
 
 export default function HomePage() {
@@ -19,33 +20,44 @@ export default function HomePage() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
-          <div className="max-w-3xl">
-            <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-4">
-              A nonprofit by students, for students
-            </p>
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Discovering futures,{' '}
-              <span className="text-gold">one career at a time.</span>
-            </h1>
-            <p className="mt-6 text-lg sm:text-xl text-white/80 leading-relaxed max-w-2xl">
-              Real conversations with real professionals. Every episode pairs someone just starting out
-              with a veteran in the same career — so you can see the full arc of a job before you
-              commit.
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/quiz"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-navy font-bold rounded-xl hover:bg-gold-light transition-colors text-base"
-              >
-                Take the Career Quiz
-                <ArrowRight size={18} />
-              </Link>
-              <Link
-                href="/episodes"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-colors text-base border border-white/20"
-              >
-                Explore Episodes
-              </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-4">
+                A nonprofit by students, for students
+              </p>
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                Discovering futures,{' '}
+                <span className="text-gold">one career at a time.</span>
+              </h1>
+              <p className="mt-6 text-lg sm:text-xl text-white/80 leading-relaxed max-w-2xl">
+                Real conversations with real professionals. Every episode pairs someone just starting out
+                with a veteran in the same career — so you can see the full arc of a job before you
+                commit.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/quiz"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-navy font-bold rounded-xl hover:bg-gold-light transition-colors text-base"
+                >
+                  Take the Career Quiz
+                  <ArrowRight size={18} />
+                </Link>
+                <Link
+                  href="/episodes"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-colors text-base border border-white/20"
+                >
+                  Explore Episodes
+                </Link>
+              </div>
+            </div>
+            {/* PLACEHOLDER: Replace public/images/hero-students.jpg with a photo of diverse students exploring careers or collaborating */}
+            <div className="hidden lg:block">
+              <PlaceholderImage
+                src="/images/hero-students.jpg"
+                alt="Students exploring careers together"
+                label="Hero Image Placeholder"
+                aspectClass="aspect-[4/3]"
+              />
             </div>
           </div>
         </div>
@@ -143,7 +155,16 @@ export default function HomePage() {
             Who This Is For
           </h2>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-2xl border border-border bg-white p-8 sm:p-10">
+            <div className="rounded-2xl border border-border bg-white overflow-hidden">
+              {/* PLACEHOLDER: Replace public/images/students-exploring.jpg with a photo of students in a learning/exploring setting */}
+              <PlaceholderImage
+                src="/images/students-exploring.jpg"
+                alt="Students exploring career options"
+                label="Students Image Placeholder"
+                aspectClass="aspect-[16/7]"
+                className="rounded-none"
+              />
+              <div className="p-8 sm:p-10">
               <div className="w-12 h-12 rounded-xl bg-navy/5 flex items-center justify-center">
                 <span className="text-2xl" role="img" aria-label="Student">&#x1F393;</span>
               </div>
@@ -161,8 +182,18 @@ export default function HomePage() {
                 Take the career quiz
                 <ArrowRight size={16} />
               </Link>
+              </div>
             </div>
-            <div className="rounded-2xl border border-border bg-white p-8 sm:p-10">
+            <div className="rounded-2xl border border-border bg-white overflow-hidden">
+              {/* PLACEHOLDER: Replace public/images/educators-parents.jpg with a photo of parents/educators helping students learn */}
+              <PlaceholderImage
+                src="/images/educators-parents.jpg"
+                alt="Parents and educators supporting students"
+                label="Educators Image Placeholder"
+                aspectClass="aspect-[16/7]"
+                className="rounded-none"
+              />
+              <div className="p-8 sm:p-10">
               <div className="w-12 h-12 rounded-xl bg-navy/5 flex items-center justify-center">
                 <span className="text-2xl" role="img" aria-label="Educator">&#x1F4DA;</span>
               </div>
@@ -180,6 +211,7 @@ export default function HomePage() {
                 Resources for educators
                 <ArrowRight size={16} />
               </Link>
+              </div>
             </div>
           </div>
         </div>

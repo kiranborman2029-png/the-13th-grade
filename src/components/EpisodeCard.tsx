@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Play, Clock, User } from 'lucide-react'
+import { Clock, User } from 'lucide-react'
 import type { Episode } from '@/lib/data'
 
 export default function EpisodeCard({ episode }: { episode: Episode }) {
@@ -12,8 +12,8 @@ export default function EpisodeCard({ episode }: { episode: Episode }) {
       <div className="relative aspect-video bg-navy/10 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-14 h-14 rounded-full bg-gold/90 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-            <Play size={24} className="text-navy ml-1" fill="currentColor" />
+          <div className="px-4 py-2 bg-navy/80 text-white text-sm font-semibold rounded-full backdrop-blur-sm">
+            Coming Soon
           </div>
         </div>
         <div className="absolute top-3 left-3">

@@ -67,15 +67,17 @@ export default async function EpisodeDetailPage(
           </span>
         </div>
 
-        {/* YouTube embed */}
-        <div className="mt-10 relative aspect-video rounded-2xl overflow-hidden bg-navy/5 border border-border">
-          <iframe
-            src={`https://www.youtube.com/embed/${episode.youtubeId}`}
-            title={episode.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="absolute inset-0 w-full h-full"
-          />
+        {/* Coming Soon Banner */}
+        <div className="mt-10 relative aspect-video rounded-2xl overflow-hidden bg-navy/5 border border-border flex items-center justify-center">
+          <div className="text-center px-6">
+            <div className="mx-auto w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-4">
+              <Clock size={32} className="text-gold" />
+            </div>
+            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-navy">This episode is coming soon!</h2>
+            <p className="mt-3 text-slate max-w-md mx-auto">
+              We&apos;re working hard to bring you this episode. Check back soon or subscribe to our newsletter to get notified when it drops.
+            </p>
+          </div>
         </div>
 
         {/* Description */}
