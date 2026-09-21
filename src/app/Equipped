@@ -1,0 +1,97 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { Mic, Wrench, ArrowRight } from 'lucide-react'
+import PlaceholderImage from '@/components/PlaceholderImage'
+
+export const metadata: Metadata = {
+  title: 'Equipped',
+  description:
+    "Equipped is our club that brings in real-world speakers to teach students practical, hands-on skills school doesn't usually cover.",
+}
+
+export default function EquippedPage() {
+  return (
+    <div className="py-16 sm:py-24">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Hero */}
+        <div className="text-center mb-16">
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-navy">
+            Equipped
+          </h1>
+          <p className="mt-4 text-lg text-slate max-w-2xl mx-auto">
+            Real speakers. Real skills. Hands-on learning for what school doesn&apos;t always teach.
+          </p>
+        </div>
+
+        {/* PLACEHOLDER: Replace public/images/equipped-hero.jpg with a photo of a speaker session or students learning a hands-on skill */}
+        <PlaceholderImage
+          src="/images/equipped-hero.jpg"
+          alt="A speaker teaching students a hands-on skill"
+          label="Equipped Image Placeholder"
+          aspectClass="aspect-[21/9]"
+        />
+
+        {/* About */}
+        <div className="mt-12 prose-like text-slate leading-relaxed text-lg">
+          <p>
+            Equipped is our club built around one idea: the most valuable skills often
+            aren&apos;t taught in a classroom. We bring in speakers and mentors from
+            different careers and backgrounds to run hands-on sessions with students —
+            covering practical, real-world skills you don&apos;t usually get from a
+            textbook. Every session is built around learning by doing, not just listening.
+          </p>
+        </div>
+
+        {/* What we do */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="rounded-2xl border border-border bg-white p-8 text-center">
+            <div className="mx-auto w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center">
+              <Mic size={24} className="text-gold" />
+            </div>
+            <h3 className="mt-4 font-serif text-xl font-bold text-navy">We Bring in Speakers</h3>
+            <p className="mt-2 text-sm text-slate leading-relaxed">
+              We invite professionals, mentors, and experts to talk with students directly — no textbooks, just real people sharing real experience.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-border bg-white p-8 text-center">
+            <div className="mx-auto w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center">
+              <Wrench size={24} className="text-gold" />
+            </div>
+            <h3 className="mt-4 font-serif text-xl font-bold text-navy">We Teach Practical Skills</h3>
+            <p className="mt-2 text-sm text-slate leading-relaxed">
+              Each session is hands-on, so students walk away having actually practiced something useful — not just heard about it.
+            </p>
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div className="mt-16 rounded-2xl bg-navy text-white p-10 sm:p-14 text-center">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold">
+            Want to Be Involved?
+          </h2>
+          <p className="mt-4 text-white/80 max-w-xl mx-auto">
+            Apply to speak at an upcoming session, or suggest a skill or topic you&apos;d
+            like to see us cover.
+          </p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            {/* PLACEHOLDER: point this at your speaker application form (Google Form, this Contact page, etc.) */}
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-navy font-bold rounded-xl hover:bg-gold-light transition-colors"
+            >
+              Apply to Speak
+              <ArrowRight size={18} />
+            </Link>
+            {/* PLACEHOLDER: point this at your suggestion form (Google Form, this Contact page, etc.) */}
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-colors border border-white/20"
+            >
+              Suggest a Speaker or Topic
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
