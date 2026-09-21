@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/mission', label: 'Mission' },
   { href: '/educators', label: 'For Educators' },
   { href: '/get-involved', label: 'Get Involved' },
+  { href: '/equipped', label: 'Equipped' },
   { href: '/contact', label: 'Contact' },
 ]
 
